@@ -150,12 +150,30 @@
     .pin-it h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
     .pin-it .subtitle { font-size: 15px; color: #5f6368; margin-bottom: 28px; }
 
+    .pin-layout {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .pin-img {
+      flex-shrink: 0;
+      max-width: 280px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    }
+    @media (max-width: 680px) {
+      .pin-layout { flex-direction: column; }
+      .pin-img { max-width: 100%; }
+    }
     .pin-steps {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      max-width: 520px;
-      margin: 0 auto;
+      flex: 1;
       text-align: left;
     }
     .pin-step {
@@ -249,7 +267,7 @@
 <!-- SECTION 1: HERO -->
 <section class="hero">
   <div class="hero-badge">Installed &amp; already ON</div>
-  <h1>Snap Links is installed.<br>It's already ON.</h1>
+  <h1>Snap Links is installed.<br>It's already <span style="color:#2e7d32;font-weight:700;">ON</span>.</h1>
   <p>Hold <kbd>Alt</kbd> + left-click drag over links &rarr; they open in new tabs.</p>
 
   <div class="video-wrap" id="videoWrap">
@@ -293,19 +311,22 @@
   <div class="section-label">Don't lose it</div>
   <h2>Don't lose it.</h2>
   <p class="subtitle">Pin Snap Links to your toolbar — one click away, always.</p>
-  <div class="pin-steps">
-    <div class="pin-step">
-      <div class="pin-num">1</div>
-      <div class="pin-text">Click the <strong>Extensions icon</strong> (puzzle piece 🧩) in Chrome's top-right corner</div>
+  <div class="pin-layout">
+    <div class="pin-steps">
+      <div class="pin-step">
+        <div class="pin-num">1</div>
+        <div class="pin-text">Click the <strong>Extensions icon</strong> (puzzle piece 🧩) in Chrome's top-right corner</div>
+      </div>
+      <div class="pin-step">
+        <div class="pin-num">2</div>
+        <div class="pin-text">Find <strong>Snap Links</strong> and click the <strong>📌 pin icon</strong> next to it</div>
+      </div>
+      <div class="pin-step">
+        <div class="pin-num">3</div>
+        <div class="pin-text">Snap Links icon appears in your toolbar — click it anytime, or press <kbd>Alt+S</kbd></div>
+      </div>
     </div>
-    <div class="pin-step">
-      <div class="pin-num">2</div>
-      <div class="pin-text">Find <strong>Snap Links</strong> and click the <strong>📌 pin icon</strong> next to it</div>
-    </div>
-    <div class="pin-step">
-      <div class="pin-num">3</div>
-      <div class="pin-text">Snap Links icon appears in your toolbar — click it anytime, or press <kbd>Alt+S</kbd></div>
-    </div>
+    <img class="pin-img" src="WelcomePage_1_260322.png" alt="Pin Snap Links screenshot">
   </div>
 </section>
 
