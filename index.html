@@ -1,0 +1,80 @@
+<!--
+  Snap Links — Hero video with click-to-pause
+  Paste into a Tilda "HTML" block.
+-->
+<style>
+  .sl-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    max-width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .sl-wrap video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .sl-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .sl-wrap.paused .sl-overlay {
+    background: rgba(0,0,0,0.35);
+  }
+  .sl-pause-icon {
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .sl-wrap.paused .sl-pause-icon {
+    opacity: 1;
+  }
+  .sl-pause-icon svg {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  }
+</style>
+
+<div class="sl-wrap" id="slWrap">
+  <video id="slVideo"
+    src="https://i.imgur.com/XhESFJU.mp4"
+    autoplay loop muted playsinline>
+  </video>
+  <div class="sl-overlay">
+    <div class="sl-pause-icon">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.55)"/>
+        <rect x="20" y="18" width="9" height="28" rx="3" fill="white"/>
+        <rect x="35" y="18" width="9" height="28" rx="3" fill="white"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var wrap  = document.getElementById('slWrap');
+  var video = document.getElementById('slVideo');
+
+  wrap.addEventListener('click', function () {
+    if (video.paused) {
+      video.play();
+      wrap.classList.remove('paused');
+    } else {
+      video.pause();
+      wrap.classList.add('paused');
+    }
+  });
+})();
+</script>
