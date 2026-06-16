@@ -37,7 +37,14 @@ To change what happens after selection: press **Alt+S** → choose action or swi
 
 ## Version History
 
-### Version 0.3.1 (Latest)
+### Version 0.3.2 (Latest production release)
+- Release date and time: 2026-06-04 22:00 MSK (UTC+03:00); released to production
+- Existing user workflow is preserved: current activation and opening behavior stays unchanged
+- Update notice banner in popup with one-click access to "What's New?"
+- Expanded step-by-step popup guidance for new users plus a direct full welcome guide link
+- Includes UF-2026-03-10, UF-2026-03-13, and UF-2026-04-09 fixes
+
+### Version 0.3.1
 - Extension is ON automatically after install — no manual activation
 - One-button flow: release lasso → links open with configured default action
 - Alt+S shortcut opens popup; Alt+Shift+S switches action with on-screen toast
@@ -83,3 +90,4 @@ For issues or feature requests, please open an issue in the repository.
 ---
 
 **Happy link opening!**
+
