@@ -4,49 +4,49 @@
 
 ## Overview
 
-Snap Links lets you draw a selection box around multiple links on any webpage and open them all at once — in new tabs, new windows, or one window with tabs. No clicks, no menus.
+Snap Links lets you draw a selection box around multiple links on any webpage and open them all at once вЂ” in new tabs, new windows, or one window with tabs. No clicks, no menus.
 
 ## Features
 
-- **One-button flow** — works right after install, no setup required
-- **Lasso selection** — hold Alt + drag to draw a box around links
-- **Configurable trigger** — change activation key (Alt / Ctrl / Shift / none) and mouse button
-- **Three open modes** — new tabs / new windows / one window with tabs
-- **Opening speed** — Fast, Balanced, or Safe mode for large batches
-- **Real-time link counter** — see how many links are selected as you draw
-- **Auto-scroll** — selection box scrolls the page automatically near edges
-- **Browser theme support** — icon adapts to light/dark Chrome theme
-- **Keyboard shortcuts** — Alt+S opens popup, Alt+Shift+S switches action
+- **One-button flow** вЂ” works right after install, no setup required
+- **Lasso selection** вЂ” hold Alt + drag to draw a box around links
+- **Configurable trigger** вЂ” change activation key (Alt / Ctrl / Shift / none) and mouse button
+- **Three open modes** вЂ” new tabs / new windows / one window with tabs
+- **Opening speed** вЂ” Fast, Balanced, or Safe mode for large batches
+- **Real-time link counter** вЂ” see how many links are selected as you draw
+- **Auto-scroll** вЂ” selection box scrolls the page automatically near edges
+- **Browser theme support** вЂ” icon adapts to light/dark Chrome theme
+- **Keyboard shortcuts** вЂ” Alt+S opens popup, Alt+Shift+S switches action
 
 ## Quick Start
 
 1. **Install** from Chrome Web Store
-2. **It's already ON** — no activation needed
+2. **It's already ON** вЂ” no activation needed
 3. **Hold Alt + drag** over links on any webpage
-4. **Release** — links open in new tabs automatically
+4. **Release** вЂ” links open in new tabs automatically
 
 That's it. Open Alt+S popup to change default action or customize behavior.
 
 ## How It Works
 
 1. Hold **Alt** and press the **left mouse button**
-2. Drag a selection box around links — a counter shows how many are selected
-3. Release — links open instantly with your default action
+2. Drag a selection box around links вЂ” a counter shows how many are selected
+3. Release вЂ” links open instantly with your default action
 
-To change what happens after selection: press **Alt+S** → choose action or switch in one click.
+To change what happens after selection: press **Alt+S** в†’ choose action or switch in one click.
 
 ## Version History
 
-### Version 0.3.2 (Latest production release)
-- Release date and time: 2026-06-04 22:00 MSK (UTC+03:00); released to production
-- Existing user workflow is preserved: current activation and opening behavior stays unchanged
-- Update notice banner in popup with one-click access to "What's New?"
-- Expanded step-by-step popup guidance for new users plus a direct full welcome guide link
-- Includes UF-2026-03-10, UF-2026-03-13, and UF-2026-04-09 fixes
+### Version 0.3.3 (Latest production release)
+- Release date and time: 2026-06-19 09:22 MSK (UTC+03:00); approved by Google and released to production
+- Right-click lasso no longer leaves the browser context menu over a successful gesture (UF-2026-05-07)
+- Version-aware update re-injection reduces stale runtime / reload-like behavior after update (UF-2026-05-22)
+- Opening speed presets are reduced for Fast, Balanced, and Safe as the accepted performance fix (UF-2026-04-12, variant A)
+- macOS remains a controlled known risk for 0.3.3; popup/help copy is softened with macOS terminology
 
 ### Version 0.3.1
-- Extension is ON automatically after install — no manual activation
-- One-button flow: release lasso → links open with configured default action
+- Extension is ON automatically after install вЂ” no manual activation
+- One-button flow: release lasso в†’ links open with configured default action
 - Alt+S shortcut opens popup; Alt+Shift+S switches action with on-screen toast
 - Result toast: shows how many links were opened
 - Opening speed modes: Fast / Balanced / Safe
